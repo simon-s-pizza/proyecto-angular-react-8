@@ -1,16 +1,91 @@
-# React + Vite
+# 📄 Proyecto React – EV08
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## GA1-220501096-03-AA1-EV08 – Eventos y estado local en React
 
-Currently, two official plugins are available:
+### CV Dinámico e Interactivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto corresponde a la evidencia **EV08**, en la cual se implementan **eventos** y **estado local (useState)** dentro del proyecto de hoja de vida (CV) construido previamente en React.
 
-## React Compiler
+El objetivo principal es hacer que el CV sea **interactivo**, permitiendo al usuario mostrar/ocultar secciones y agregar nuevas tecnologías al stack dinámicamente.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades añadidas en esta evidencia
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✔ 1. Componente **ToggleHabilidades**
+
+- Permite **mostrar u ocultar** la sección de habilidades.
+- Usa `useState` para manejar la visibilidad.
+- Utiliza **renderizado condicional**.
+
+### ✔ 2. Componente **FormularioTecnologia**
+
+- Permite **agregar tecnologías nuevas** al stack mediante un formulario.
+- Usa inputs controlados (`useState`).
+- Maneja eventos:
+  - `onChange` → para actualizar el input
+  - `onSubmit` → para agregar la tecnología sin recargar la página
+- El dato ingresado se envía al componente padre (App.jsx) mediante **props y funciones callback**.
+
+### ✔ 3. Manejo de estado en **App.jsx**
+
+- Se creó el estado global `tecnologias`.
+- Se implementó `agregarTecnologia()` para modificar ese estado.
+- Se actualizó el flujo de datos mediante **props**.
+- El stack se renderiza de manera dinámica.
+
+### ✔ 4. Actualización del archivo **cvData.js**
+
+- Se separaron los datos estáticos del CV.
+- Se agregaron las tecnologías iniciales que luego pasan al estado dinámico.
+
+---
+
+## 📁 Estructura de carpetas relevante
+
+src/
+├── components/
+│ ├── ToggleHabilidades.jsx
+│ ├── FormularioTecnologia.jsx
+│ ├── StackTecnologias.jsx
+│ ├── Habilidades.jsx
+│ ├── ...
+│
+├── data/
+│ └── cvData.js
+│
+├── App.jsx
+└── main.jsx
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+- React con Vite
+- JavaScript ES6+
+- JSX
+- Hooks (useState)
+- Git y GitHub
+- HTML y CSS
+
+---
+
+## 📸 Capturas de funcionamiento
+
+### 🔹 Formulario de agregar tecnologías
+
+_(Incluye aquí tu imagen)_
+
+### 🔹 Sección de habilidades con botón de mostrar/ocultar
+
+_(Incluye aquí tu imagen)_
+
+---
+
+## 🧪 ¿Cómo ejecutar el proyecto?
+
+1️⃣ Clonar el repositorio (si aún no está clonado):
+
+```bash
+git clone <url-del-repo>
+```
