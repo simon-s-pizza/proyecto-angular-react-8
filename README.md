@@ -1,4 +1,4 @@
-# 📄 Proyecto React – EV08
+# Proyecto React – EV08
 
 ## GA1-220501096-03-AA1-EV08 – Eventos y estado local en React
 
@@ -10,15 +10,15 @@ El objetivo principal es hacer que el CV sea **interactivo**, permitiendo al usu
 
 ---
 
-## 🚀 Funcionalidades añadidas en esta evidencia
+## Funcionalidades añadidas en esta evidencia
 
-### ✔ 1. Componente **ToggleHabilidades**
+### 1. Componente **ToggleHabilidades**
 
 - Permite **mostrar u ocultar** la sección de habilidades.
 - Usa `useState` para manejar la visibilidad.
 - Utiliza **renderizado condicional**.
 
-### ✔ 2. Componente **FormularioTecnologia**
+### 2. Componente **FormularioTecnologia**
 
 - Permite **agregar tecnologías nuevas** al stack mediante un formulario.
 - Usa inputs controlados (`useState`).
@@ -27,21 +27,21 @@ El objetivo principal es hacer que el CV sea **interactivo**, permitiendo al usu
   - `onSubmit` → para agregar la tecnología sin recargar la página
 - El dato ingresado se envía al componente padre (App.jsx) mediante **props y funciones callback**.
 
-### ✔ 3. Manejo de estado en **App.jsx**
+### 3. Manejo de estado en **App.jsx**
 
 - Se creó el estado global `tecnologias`.
 - Se implementó `agregarTecnologia()` para modificar ese estado.
 - Se actualizó el flujo de datos mediante **props**.
 - El stack se renderiza de manera dinámica.
 
-### ✔ 4. Actualización del archivo **cvData.js**
+### 4. Actualización del archivo **cvData.js**
 
 - Se separaron los datos estáticos del CV.
 - Se agregaron las tecnologías iniciales que luego pasan al estado dinámico.
 
 ---
 
-## 📁 Estructura de carpetas relevante
+## Estructura de carpetas relevante
 
 src/
 ├── components/
@@ -59,7 +59,7 @@ src/
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - React con Vite
 - JavaScript ES6+
@@ -70,21 +70,17 @@ src/
 
 ---
 
-## 📸 Capturas de funcionamiento
+## Capturas de funcionamiento
 
-### 🔹 Formulario de agregar tecnologías
+![vista previa](image.png)
 
-_(Incluye aquí tu imagen)_
+## Capturas de funcionamiento con habilidades ocultas
 
-### 🔹 Sección de habilidades con botón de mostrar/ocultar
+![alt text](<image copy.png>)
 
-_(Incluye aquí tu imagen)_
+## ¿Cómo ejecutar el proyecto?
 
----
-
-## 🧪 ¿Cómo ejecutar el proyecto?
-
-1️⃣ Clonar el repositorio (si aún no está clonado):
+Clonar el repositorio (si aún no está clonado):
 
 ```bash
 git clone <url-del-repo>
